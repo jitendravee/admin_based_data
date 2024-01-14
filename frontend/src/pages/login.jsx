@@ -16,7 +16,7 @@ const Login = () => {
 
     setLoading(true);
 
-    axios.post('http://localhost:3500/login', data)
+    axios.post('https://admin-data-7e9c.onrender.com/login', data)
       .then(response => {
         setLoading(false);
         console.log(response.data); 

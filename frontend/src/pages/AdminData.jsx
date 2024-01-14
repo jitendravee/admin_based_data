@@ -6,7 +6,7 @@ const AdminData = () => {
     const [loginData, setLoginData] = useState([]);
   
     useEffect(() => {
-        axios.get('http://localhost:3500/admindata')
+        axios.get('https://admin-data-7e9c.onrender.com/admindata')
         .then(response => {
           console.log('Customer Data API Response:', response);
   
@@ -18,7 +18,7 @@ const AdminData = () => {
         })
         .catch(error => console.error('Error fetching customer data:', error));
   
-      axios.get('http://localhost:3500/logindata')
+      axios.get('https://admin-data-7e9c.onrender.com/logindata')
         .then(response => {
           console.log('Login Data API Response:', response);
   

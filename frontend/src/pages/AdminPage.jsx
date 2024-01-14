@@ -28,7 +28,7 @@ const AdminPage = () => {
     };
 
   
-    axios.post('http://localhost:3500/customerinfo', data)
+    axios.post('https://admin-data-7e9c.onrender.com/customerinfo', data)
       .then(response => {
         console.log(response.data); 
         alert('success');
